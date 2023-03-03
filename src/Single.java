@@ -7,7 +7,7 @@ public class Single extends Lanzamiento{
     public Single() {
     }
 
-    public Single(String title, Date fecha, int likes) {
+    public Single(String title, String fecha, int likes) {
         super(title, fecha, likes);
     }
 

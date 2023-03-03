@@ -1,6 +1,6 @@
 public class Usuario {
-    private String username;
-    private String password;
+    protected String username;
+    protected String password;
     protected int edad;
 
     public Usuario() {

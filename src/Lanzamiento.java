@@ -3,13 +3,13 @@ import java.util.Date;
 
 public class Lanzamiento {
     private String title;
-    private Date fecha;
+    private String fecha;
     private int likes;
 
     public Lanzamiento() {
     }
 
-    public Lanzamiento(String title, Date fecha, int likes) {
+    public Lanzamiento(String title, String fecha, int likes) {
         this.title = title;
         this.fecha = fecha;
         this.likes = likes;
@@ -23,11 +23,11 @@ public class Lanzamiento {
         this.title = title;
     }
 
-    public Date getFecha() {
+    public String getFecha() {
         return fecha;
     }
 
-    public void setFecha(Date fecha) {
+    public void setFecha(String fecha) {
         this.fecha = fecha;
     }
 

@@ -1,3 +1,9 @@
+
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 public class LogIn extends javax.swing.JFrame {
 
     /**
@@ -5,6 +11,7 @@ public class LogIn extends javax.swing.JFrame {
      */
     public LogIn() {
         initComponents();
+        setLocationRelativeTo(null);
     }
 
     /**
@@ -16,12 +23,88 @@ public class LogIn extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jd_signUpUsuario = new javax.swing.JDialog();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jt_userArt = new javax.swing.JTextField();
+        jt_passArt = new javax.swing.JTextField();
+        jt_ageArt = new javax.swing.JTextField();
+        jt_nombreArtistico = new javax.swing.JTextField();
+        jb_crearArtista = new javax.swing.JButton();
         jSeparator1 = new javax.swing.JSeparator();
         jLabel1 = new javax.swing.JLabel();
         jb_logInUser = new javax.swing.JButton();
         jb_signUpUser = new javax.swing.JButton();
         jb_logInArtist = new javax.swing.JButton();
         jb_logInArtist1 = new javax.swing.JButton();
+
+        jLabel2.setText("Username");
+
+        jLabel3.setText("Contraseña");
+
+        jLabel4.setText("Edad");
+
+        jLabel5.setText("Nombre artistico");
+
+        jb_crearArtista.setText("SIGN UP");
+        jb_crearArtista.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jb_crearArtistaActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jd_signUpUsuarioLayout = new javax.swing.GroupLayout(jd_signUpUsuario.getContentPane());
+        jd_signUpUsuario.getContentPane().setLayout(jd_signUpUsuarioLayout);
+        jd_signUpUsuarioLayout.setHorizontalGroup(
+            jd_signUpUsuarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jd_signUpUsuarioLayout.createSequentialGroup()
+                .addGap(22, 22, 22)
+                .addGroup(jd_signUpUsuarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jd_signUpUsuarioLayout.createSequentialGroup()
+                        .addComponent(jLabel4)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jt_ageArt, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jd_signUpUsuarioLayout.createSequentialGroup()
+                        .addComponent(jLabel3)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jt_passArt, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jd_signUpUsuarioLayout.createSequentialGroup()
+                        .addComponent(jLabel2)
+                        .addGap(75, 75, 75)
+                        .addComponent(jt_userArt, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jd_signUpUsuarioLayout.createSequentialGroup()
+                        .addComponent(jLabel5)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(jd_signUpUsuarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jb_crearArtista)
+                            .addComponent(jt_nombreArtistico, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(40, Short.MAX_VALUE))
+        );
+        jd_signUpUsuarioLayout.setVerticalGroup(
+            jd_signUpUsuarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jd_signUpUsuarioLayout.createSequentialGroup()
+                .addGap(25, 25, 25)
+                .addGroup(jd_signUpUsuarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel2)
+                    .addComponent(jt_userArt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(31, 31, 31)
+                .addGroup(jd_signUpUsuarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jt_passArt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel3))
+                .addGap(35, 35, 35)
+                .addGroup(jd_signUpUsuarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel4)
+                    .addComponent(jt_ageArt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(35, 35, 35)
+                .addGroup(jd_signUpUsuarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel5)
+                    .addComponent(jt_nombreArtistico, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 35, Short.MAX_VALUE)
+                .addComponent(jb_crearArtista)
+                .addGap(28, 28, 28))
+        );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -33,10 +116,20 @@ public class LogIn extends javax.swing.JFrame {
         jb_logInUser.setText("LOG IN");
 
         jb_signUpUser.setText("SIGN UP");
+        jb_signUpUser.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jb_signUpUserActionPerformed(evt);
+            }
+        });
 
         jb_logInArtist.setText("LOG IN as artist");
 
         jb_logInArtist1.setText("SIGN UP as artist");
+        jb_logInArtist1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jb_logInArtist1ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -87,10 +180,37 @@ public class LogIn extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void jb_signUpUserActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb_signUpUserActionPerformed
+        
+    }//GEN-LAST:event_jb_signUpUserActionPerformed
+
+    private void jb_crearArtistaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb_crearArtistaActionPerformed
+        Artista a = new Artista(jt_nombreArtistico.getText(),jt_userArt.getText(),jt_passArt.getText(),Integer.parseInt(jt_ageArt.getText()));
+        
+        adminUsuarios.getUsers().add(a);
+        try {
+            adminUsuarios.escribirArchivo();
+        } catch (IOException ex) {
+        }
+        
+        jd_signUpUsuario.setVisible(false);
+        jt_ageArt.setText("");
+        jt_nombreArtistico.setText("");
+        jt_passArt.setText("");
+        jt_userArt.setText("");
+    }//GEN-LAST:event_jb_crearArtistaActionPerformed
+
+    private void jb_logInArtist1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb_logInArtist1ActionPerformed
+        jd_signUpUsuario.setModal(true);
+        jd_signUpUsuario.pack();
+        jd_signUpUsuario.setLocationRelativeTo(this);
+        jd_signUpUsuario.setVisible(true);
+    }//GEN-LAST:event_jb_logInArtist1ActionPerformed
+
     /**
      * @param args the command line arguments
      */
-    public static void main(String args[]) {
+    public static void main(String args[]) throws IOException {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
@@ -124,10 +244,24 @@ public class LogIn extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JSeparator jSeparator1;
+    private javax.swing.JButton jb_crearArtista;
     private javax.swing.JButton jb_logInArtist;
     private javax.swing.JButton jb_logInArtist1;
     private javax.swing.JButton jb_logInUser;
     private javax.swing.JButton jb_signUpUser;
+    private javax.swing.JDialog jd_signUpUsuario;
+    private javax.swing.JTextField jt_ageArt;
+    private javax.swing.JTextField jt_nombreArtistico;
+    private javax.swing.JTextField jt_passArt;
+    private javax.swing.JTextField jt_userArt;
     // End of variables declaration//GEN-END:variables
+    public ArrayList <Artista> artistas = new ArrayList();
+    public ArrayList <Cliente> clientes = new ArrayList();
+    
+    adminUsuarios adminUsuarios = new adminUsuarios("./usuarios");
 }

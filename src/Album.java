@@ -9,8 +9,9 @@ public class Album extends Lanzamiento{
     public Album() {
     }
 
-    public Album(String title, Date fecha, int likes) {
+    public Album(String title, String fecha, int likes) {
         super(title, fecha, likes);
+        
     }
 
     public ArrayList<Cancion> getCanciones() {
