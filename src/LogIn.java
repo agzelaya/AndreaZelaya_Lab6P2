@@ -3,6 +3,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.swing.JOptionPane;
 
 public class LogIn extends javax.swing.JFrame {
 
@@ -23,7 +24,7 @@ public class LogIn extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jd_signUpUsuario = new javax.swing.JDialog();
+        jd_signUpArtista = new javax.swing.JDialog();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
@@ -33,12 +34,26 @@ public class LogIn extends javax.swing.JFrame {
         jt_ageArt = new javax.swing.JTextField();
         jt_nombreArtistico = new javax.swing.JTextField();
         jb_crearArtista = new javax.swing.JButton();
+        jd_signUpCliente = new javax.swing.JDialog();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jt_userCliente = new javax.swing.JTextField();
+        jt_passCliente = new javax.swing.JTextField();
+        jt_ageCliente = new javax.swing.JTextField();
+        jb_crearCliente = new javax.swing.JButton();
+        jd_logInArt = new javax.swing.JDialog();
+        jLabel9 = new javax.swing.JLabel();
+        jt_loginArtUser = new javax.swing.JTextField();
+        jLabel10 = new javax.swing.JLabel();
+        jt_loginArtPass = new javax.swing.JTextField();
+        jb_logInArtista = new javax.swing.JButton();
         jSeparator1 = new javax.swing.JSeparator();
         jLabel1 = new javax.swing.JLabel();
         jb_logInUser = new javax.swing.JButton();
         jb_signUpUser = new javax.swing.JButton();
         jb_logInArtist = new javax.swing.JButton();
-        jb_logInArtist1 = new javax.swing.JButton();
+        jb_signUpArtist = new javax.swing.JButton();
 
         jLabel2.setText("Username");
 
@@ -55,55 +70,162 @@ public class LogIn extends javax.swing.JFrame {
             }
         });
 
-        javax.swing.GroupLayout jd_signUpUsuarioLayout = new javax.swing.GroupLayout(jd_signUpUsuario.getContentPane());
-        jd_signUpUsuario.getContentPane().setLayout(jd_signUpUsuarioLayout);
-        jd_signUpUsuarioLayout.setHorizontalGroup(
-            jd_signUpUsuarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jd_signUpUsuarioLayout.createSequentialGroup()
+        javax.swing.GroupLayout jd_signUpArtistaLayout = new javax.swing.GroupLayout(jd_signUpArtista.getContentPane());
+        jd_signUpArtista.getContentPane().setLayout(jd_signUpArtistaLayout);
+        jd_signUpArtistaLayout.setHorizontalGroup(
+            jd_signUpArtistaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jd_signUpArtistaLayout.createSequentialGroup()
                 .addGap(22, 22, 22)
-                .addGroup(jd_signUpUsuarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jd_signUpUsuarioLayout.createSequentialGroup()
+                .addGroup(jd_signUpArtistaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jd_signUpArtistaLayout.createSequentialGroup()
                         .addComponent(jLabel4)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jt_ageArt, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jd_signUpUsuarioLayout.createSequentialGroup()
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jd_signUpArtistaLayout.createSequentialGroup()
                         .addComponent(jLabel3)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jt_passArt, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jd_signUpUsuarioLayout.createSequentialGroup()
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jd_signUpArtistaLayout.createSequentialGroup()
                         .addComponent(jLabel2)
                         .addGap(75, 75, 75)
                         .addComponent(jt_userArt, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jd_signUpUsuarioLayout.createSequentialGroup()
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jd_signUpArtistaLayout.createSequentialGroup()
                         .addComponent(jLabel5)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(jd_signUpUsuarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(jd_signUpArtistaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jb_crearArtista)
                             .addComponent(jt_nombreArtistico, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addContainerGap(40, Short.MAX_VALUE))
         );
-        jd_signUpUsuarioLayout.setVerticalGroup(
-            jd_signUpUsuarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jd_signUpUsuarioLayout.createSequentialGroup()
+        jd_signUpArtistaLayout.setVerticalGroup(
+            jd_signUpArtistaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jd_signUpArtistaLayout.createSequentialGroup()
                 .addGap(25, 25, 25)
-                .addGroup(jd_signUpUsuarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(jd_signUpArtistaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
                     .addComponent(jt_userArt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(31, 31, 31)
-                .addGroup(jd_signUpUsuarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(jd_signUpArtistaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jt_passArt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel3))
                 .addGap(35, 35, 35)
-                .addGroup(jd_signUpUsuarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(jd_signUpArtistaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel4)
                     .addComponent(jt_ageArt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(35, 35, 35)
-                .addGroup(jd_signUpUsuarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(jd_signUpArtistaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel5)
                     .addComponent(jt_nombreArtistico, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 35, Short.MAX_VALUE)
                 .addComponent(jb_crearArtista)
                 .addGap(28, 28, 28))
+        );
+
+        jLabel6.setText("Username");
+
+        jLabel7.setText("Contraseña");
+
+        jLabel8.setText("Edad");
+
+        jb_crearCliente.setText("SIGN UP");
+        jb_crearCliente.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jb_crearClienteActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jd_signUpClienteLayout = new javax.swing.GroupLayout(jd_signUpCliente.getContentPane());
+        jd_signUpCliente.getContentPane().setLayout(jd_signUpClienteLayout);
+        jd_signUpClienteLayout.setHorizontalGroup(
+            jd_signUpClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jd_signUpClienteLayout.createSequentialGroup()
+                .addGap(22, 22, 22)
+                .addGroup(jd_signUpClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(jd_signUpClienteLayout.createSequentialGroup()
+                        .addComponent(jLabel7)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jt_passCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jd_signUpClienteLayout.createSequentialGroup()
+                        .addComponent(jLabel8)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jt_ageCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jd_signUpClienteLayout.createSequentialGroup()
+                        .addComponent(jLabel6)
+                        .addGap(75, 75, 75)
+                        .addComponent(jt_userCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jd_signUpClienteLayout.createSequentialGroup()
+                        .addComponent(jb_crearCliente)
+                        .addGap(136, 136, 136)))
+                .addContainerGap(40, Short.MAX_VALUE))
+        );
+        jd_signUpClienteLayout.setVerticalGroup(
+            jd_signUpClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jd_signUpClienteLayout.createSequentialGroup()
+                .addGap(25, 25, 25)
+                .addGroup(jd_signUpClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel6)
+                    .addComponent(jt_userCliente, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 62, Short.MAX_VALUE)
+                .addGroup(jd_signUpClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel7)
+                    .addComponent(jt_passCliente, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(53, 53, 53)
+                .addGroup(jd_signUpClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel8)
+                    .addComponent(jt_ageCliente, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(43, 43, 43)
+                .addComponent(jb_crearCliente)
+                .addGap(28, 28, 28))
+        );
+
+        jLabel9.setText("Username");
+
+        jLabel10.setText("Contraseña");
+
+        jb_logInArtista.setText("LOG IN");
+        jb_logInArtista.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jb_logInArtistaActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jd_logInArtLayout = new javax.swing.GroupLayout(jd_logInArt.getContentPane());
+        jd_logInArt.getContentPane().setLayout(jd_logInArtLayout);
+        jd_logInArtLayout.setHorizontalGroup(
+            jd_logInArtLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jd_logInArtLayout.createSequentialGroup()
+                .addGap(33, 33, 33)
+                .addGroup(jd_logInArtLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel9)
+                    .addComponent(jLabel10))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 56, Short.MAX_VALUE)
+                .addGroup(jd_logInArtLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jt_loginArtPass, javax.swing.GroupLayout.PREFERRED_SIZE, 219, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jt_loginArtUser, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(32, 32, 32))
+            .addGroup(jd_logInArtLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jd_logInArtLayout.createSequentialGroup()
+                    .addGap(159, 159, 159)
+                    .addComponent(jb_logInArtista)
+                    .addContainerGap(169, Short.MAX_VALUE)))
+        );
+        jd_logInArtLayout.setVerticalGroup(
+            jd_logInArtLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jd_logInArtLayout.createSequentialGroup()
+                .addContainerGap(89, Short.MAX_VALUE)
+                .addGroup(jd_logInArtLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel9)
+                    .addComponent(jt_loginArtUser, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(59, 59, 59)
+                .addGroup(jd_logInArtLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jt_loginArtPass, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel10))
+                .addGap(108, 108, 108))
+            .addGroup(jd_logInArtLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jd_logInArtLayout.createSequentialGroup()
+                    .addContainerGap(250, Short.MAX_VALUE)
+                    .addComponent(jb_logInArtista)
+                    .addGap(27, 27, 27)))
         );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -123,11 +245,16 @@ public class LogIn extends javax.swing.JFrame {
         });
 
         jb_logInArtist.setText("LOG IN as artist");
-
-        jb_logInArtist1.setText("SIGN UP as artist");
-        jb_logInArtist1.addActionListener(new java.awt.event.ActionListener() {
+        jb_logInArtist.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jb_logInArtist1ActionPerformed(evt);
+                jb_logInArtistActionPerformed(evt);
+            }
+        });
+
+        jb_signUpArtist.setText("SIGN UP as artist");
+        jb_signUpArtist.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jb_signUpArtistActionPerformed(evt);
             }
         });
 
@@ -148,7 +275,7 @@ public class LogIn extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addGap(0, 201, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jb_logInArtist1)
+                    .addComponent(jb_signUpArtist)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
@@ -173,7 +300,7 @@ public class LogIn extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(jb_logInArtist)
                 .addGap(30, 30, 30)
-                .addComponent(jb_logInArtist1)
+                .addComponent(jb_signUpArtist)
                 .addGap(40, 40, 40))
         );
 
@@ -181,7 +308,10 @@ public class LogIn extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jb_signUpUserActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb_signUpUserActionPerformed
-        
+        jd_signUpCliente.setModal(true);
+        jd_signUpCliente.pack();
+        jd_signUpCliente.setLocationRelativeTo(this);
+        jd_signUpCliente.setVisible(true);
     }//GEN-LAST:event_jb_signUpUserActionPerformed
 
     private void jb_crearArtistaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb_crearArtistaActionPerformed
@@ -193,19 +323,60 @@ public class LogIn extends javax.swing.JFrame {
         } catch (IOException ex) {
         }
         
-        jd_signUpUsuario.setVisible(false);
+        jd_signUpArtista.setVisible(false);
         jt_ageArt.setText("");
         jt_nombreArtistico.setText("");
         jt_passArt.setText("");
         jt_userArt.setText("");
     }//GEN-LAST:event_jb_crearArtistaActionPerformed
 
-    private void jb_logInArtist1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb_logInArtist1ActionPerformed
-        jd_signUpUsuario.setModal(true);
-        jd_signUpUsuario.pack();
-        jd_signUpUsuario.setLocationRelativeTo(this);
-        jd_signUpUsuario.setVisible(true);
-    }//GEN-LAST:event_jb_logInArtist1ActionPerformed
+    private void jb_signUpArtistActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb_signUpArtistActionPerformed
+        jd_signUpArtista.setModal(true);
+        jd_signUpArtista.pack();
+        jd_signUpArtista.setLocationRelativeTo(this);
+        jd_signUpArtista.setVisible(true);
+    }//GEN-LAST:event_jb_signUpArtistActionPerformed
+
+    private void jb_crearClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb_crearClienteActionPerformed
+        Cliente c = new Cliente(jt_userCliente.getText(),jt_passCliente.getText(),Integer.parseInt(jt_ageCliente.getText()));
+        
+        adminUsuarios.getUsers().add(c);
+        try {
+            adminUsuarios.escribirArchivo();
+        } catch (IOException ex) {
+        }
+        jt_ageCliente.setText("");
+        jt_passCliente.setText("");
+        jt_userCliente.setText("");
+        jd_signUpCliente.setVisible(false);
+    }//GEN-LAST:event_jb_crearClienteActionPerformed
+
+    private void jb_logInArtistaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb_logInArtistaActionPerformed
+        for (int i = 0; i < adminUsuarios.getUsers().size(); i++) {
+            if(jt_loginArtUser.getText().equals(adminUsuarios.getUsers().get(i).getUsername()) && jt_loginArtPass.getText().equals(adminUsuarios.getUsers().get(i).getPassword())){
+                curUser = adminUsuarios.getUsers().get(i);
+                JOptionPane.showMessageDialog(this,"Log in exitoso");
+            }else{
+                JOptionPane.showMessageDialog(this, "Cagaste");
+            }
+        }
+//        for (int i = 0; i < users.size(); i++) {
+//                if (cuenta.equals(users.get(i).getUsername()) && contra.equals(users.get(i).getPassword())) {
+//                    username = users.get(i).getNombre();
+//                    isAdmin = false;
+//                    inAcc = true;
+//                    System.out.println("Log in exitoso");
+//                } else {
+//                }
+//            }
+    }//GEN-LAST:event_jb_logInArtistaActionPerformed
+
+    private void jb_logInArtistActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb_logInArtistActionPerformed
+        jd_logInArt.setModal(true);
+        jd_logInArt.pack();
+        jd_logInArt.setLocationRelativeTo(this);
+        jd_logInArt.setVisible(true);
+    }//GEN-LAST:event_jb_logInArtistActionPerformed
 
     /**
      * @param args the command line arguments
@@ -244,24 +415,38 @@ public class LogIn extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JButton jb_crearArtista;
+    private javax.swing.JButton jb_crearCliente;
     private javax.swing.JButton jb_logInArtist;
-    private javax.swing.JButton jb_logInArtist1;
+    private javax.swing.JButton jb_logInArtista;
     private javax.swing.JButton jb_logInUser;
+    private javax.swing.JButton jb_signUpArtist;
     private javax.swing.JButton jb_signUpUser;
-    private javax.swing.JDialog jd_signUpUsuario;
+    private javax.swing.JDialog jd_logInArt;
+    private javax.swing.JDialog jd_signUpArtista;
+    private javax.swing.JDialog jd_signUpCliente;
     private javax.swing.JTextField jt_ageArt;
+    private javax.swing.JTextField jt_ageCliente;
+    private javax.swing.JTextField jt_loginArtPass;
+    private javax.swing.JTextField jt_loginArtUser;
     private javax.swing.JTextField jt_nombreArtistico;
     private javax.swing.JTextField jt_passArt;
+    private javax.swing.JTextField jt_passCliente;
     private javax.swing.JTextField jt_userArt;
+    private javax.swing.JTextField jt_userCliente;
     // End of variables declaration//GEN-END:variables
     public ArrayList <Artista> artistas = new ArrayList();
     public ArrayList <Cliente> clientes = new ArrayList();
-    
+    public Usuario curUser;
     adminUsuarios adminUsuarios = new adminUsuarios("./usuarios");
 }
