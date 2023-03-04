@@ -43,7 +43,7 @@ public class adminCancion {
             for (Cancion c : canciones) {
                 bw.write(c.getTitle() + "|");
                 bw.write(c.getDuracion() + "|");
-                bw.write(c.getAlbum() + "|");
+                bw.write(c.getAlbum());
                 bw.write("\n");
 
             }
