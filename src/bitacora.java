@@ -1,14 +1,19 @@
 
-import java.io.*;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.Scanner;
 
-public class adminUsuarios {
-
-    public ArrayList<Usuario> users = new ArrayList();
+public class bitacora {
+     public ArrayList<Usuario> users = new ArrayList();
     public File archivo = null;
 
-    public adminUsuarios(String path) {
+    public bitacora(String path) {
         archivo = new File(path);
     }
 
@@ -46,7 +51,10 @@ public class adminUsuarios {
                     bw.write(u.getPassword() + "|");
                     bw.write(u.getEdad() + "|");
                     bw.write(((Artista) u).getArt_name());
-                    bw.write("\n");
+                    Date date = new Date();
+                    DateFormat dateFormat = new SimpleDateFormat("yyyy-mm-dd hh:mm:ss");
+                    String strDate = dateFormat.format(date);
+                    bw.write(strDate + "\n");
                 }else{
                     bw.write(u.getUsername() + "|");
                     bw.write(u.getPassword() + "|");
@@ -101,5 +109,4 @@ public class adminUsuarios {
             System.out.println("no existe");
         }
     }
-
 }

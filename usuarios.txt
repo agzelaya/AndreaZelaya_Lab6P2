@@ -1,0 +1,6 @@
+twice|once|23|TWICE
+pollo|asado|34|aaa
+aaa|1|13
+bbb|2|14
+lamp|789|45|Lamp
+lvejy|perfume|25|Lovejoy

@@ -7,8 +7,16 @@ public class Single extends Lanzamiento{
     public Single() {
     }
 
-    public Single(String title, String fecha, int likes) {
-        super(title, fecha, likes);
+    public Single(Cancion cancion, String title, String fecha) {
+        super(title, fecha);
+        this.cancion = cancion;
+    }
+    
+    
+    
+    public Single(Cancion cancion, int likes) {
+        this.cancion = cancion;
+        this.likes = likes;
     }
 
     public Cancion getCancion() {

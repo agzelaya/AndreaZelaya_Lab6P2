@@ -4,10 +4,17 @@ import java.util.Date;
 public class Lanzamiento {
     private String title;
     private String fecha;
-    private int likes;
+    protected int likes;
 
     public Lanzamiento() {
     }
+
+    public Lanzamiento(String title, String fecha) {
+        this.title = title;
+        this.fecha = fecha;
+    }
+    
+    
 
     public Lanzamiento(String title, String fecha, int likes) {
         this.title = title;
